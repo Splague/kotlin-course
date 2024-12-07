@@ -9,9 +9,9 @@ fun main() {
         require(list.isNotEmpty()) { "Ты предлагаешь мне пустой список, придумай что-нибудь получше" }
         return list.average()
     }
-    val sscNoEtoLyambdasTipom: (list: List<Int>) -> Double = { list ->
-        require(list.isNotEmpty()) { "Ты предлагаешь мне пустой список, придумай что-нибудь получше" }
-        list.average()
+    val sscNoEtoLyambdasTipom: (List<Int>) -> Double = {
+        require(it.isNotEmpty()) { "Ты предлагаешь мне пустой список, придумай что-нибудь получше" }
+        it.average()
     }
     val sscNoEtoLyambdaBezTipa = { list: List<Int> ->
         require(list.isNotEmpty()) { "Ты предлагаешь мне пустой список, придумай что-нибудь получше" }
